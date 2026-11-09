@@ -17,6 +17,16 @@ st.caption(
 
 model_name = st.sidebar.selectbox("Classifier", list(MODEL_FILES))
 data_source = st.sidebar.radio("Data source", ["Bundled test data", "Upload CSV"])
+st.sidebar.download_button(
+    "Download CSV template",
+    data=pd.DataFrame(columns=FEATURES).to_csv(index=False).encode("utf-8"),
+    file_name="sleep_debt_template.csv",
+    mime="text/csv",
+)
+st.sidebar.caption(
+    "The template contains headers only. Fill in the 16 predictor columns, then upload "
+    "the CSV. Add sleep_debt_category only if you have known labels for evaluation."
+)
 test_path = ROOT / "test_data.csv"
 if not test_path.is_file():
     st.error("test_data.csv is missing. Run: python train_models.py")
