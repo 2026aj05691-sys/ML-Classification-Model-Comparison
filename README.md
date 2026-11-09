@@ -39,8 +39,7 @@ each model pipeline. All five models use the same split and inputs.
 
 ## c. GitHub repository link
 
-**Pending:** the GitHub repository has not been created yet. Add its URL here
-after creating and publishing the repository.
+https://github.com/2026aj05691-sys/ML-Classification-Model-Comparison
 
 ## d. Models used and evaluation metrics
 
