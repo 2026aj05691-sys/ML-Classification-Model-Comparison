@@ -1,0 +1,43 @@
+{
+  "python": "3.13.16",
+  "packages": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.5.4",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "source_file": "bedtime_screentime_sleep_debt.csv",
+  "source_sha256": "8d0640c67c564d586f95f4a806071680c13e3491cd8c44443e85c60e0fb17f33",
+  "random_state": 42,
+  "test_size": 0.2,
+  "training_rows": 6800,
+  "test_rows": 1700,
+  "target": "sleep_debt_category",
+  "classes": [
+    "Mild Deficit",
+    "Moderate Debt",
+    "Optimal Recovery",
+    "Severe Sleep Debt"
+  ],
+  "numeric_features": [
+    "age",
+    "bedtime_phone_minutes",
+    "screen_brightness_pct",
+    "blue_light_filter_active",
+    "caffeine_post_5pm_mg",
+    "physical_activity_min",
+    "sleep_latency_min",
+    "total_sleep_hours",
+    "deep_sleep_pct",
+    "rem_sleep_pct",
+    "morning_alarm_snoozes",
+    "next_day_fatigue_score"
+  ],
+  "categorical_features": [
+    "gender",
+    "occupation_type",
+    "chronotype",
+    "primary_bedtime_app"
+  ]
+}
